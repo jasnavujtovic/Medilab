@@ -1233,16 +1233,6 @@ input[type="email"] + small {
     bottom: -20px;
 }
 
-.form-group small {
-    color: red;
-    margin-left: 10px;
-    visibility: hidden;
-}
-
-.form-group.error small {
-    visibility: visible;
-}
-
 .form input {
     width: 100%;
     padding: 12px;
