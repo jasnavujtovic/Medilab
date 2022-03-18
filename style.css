@@ -626,7 +626,7 @@ SERVICES
     font-size: 1rem;
     color: var(--font-color);
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .services article {
@@ -655,14 +655,13 @@ SERVICES
     backface-visibility: hidden;
     overflow: hidden;
     padding: 40px 20px;
-
 }
 
 .card-back {
     transform: rotateY(-180deg);
     background-color: var(--primary);
     border: 1px solid var(--primary);
-
+    padding: 10px;
 }
 
 .card-back li, 
@@ -786,9 +785,37 @@ DEPARTMENTS
     flex-wrap: wrap;
 }
 
+.departments-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .departments-wrapp ul {
     flex: 0 0 23%;
-    position: relative;
+}
+
+.departments-text {
+    flex: 0 0 75%;
+    display: none;
+}
+
+.departments-text.active {
+    display: block;
+}
+
+.departments-text .text {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.departments-text .img {
+    width: 40%;
+}
+
+.departments-text img {
+    width: 100%;
+    height: auto;
 }
 
 .departments-wrapp .tabs .tab a[data-switcher] {
@@ -808,33 +835,6 @@ DEPARTMENTS
 .departments-wrapp .tabs .tab.active a[data-switcher] {
     border-right: 2px solid var(--primary);
     color: var(--primary);
-}
-
-.departments-text {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    position: absolute;
-    right: 0;
-    visibility: hidden;
-}
-
-.departments-text.active {
-    visibility: visible;
-}
-
-.departments-text .text {
-    flex: 0 0 60%;
-    margin-right: 20px;
-}
-
-.departments-text .img {
-    flex: 0 0 26%;
-}
-
-.departments-text img {
-    width: 100%;
-    height: auto;
 }
 
 .departments-text h3 {
